@@ -22,7 +22,7 @@ app.get('/', function (req, res) {
 });
 
 app.post('/', function (req, res) {
-    console.log('request --->', req.body);
+    console.log('request --->', req);
     console.log('request BODY --->', req.body);
     MongoClient.connect(url, function(err, database) {
         var collection = database.collection('gameScore');
