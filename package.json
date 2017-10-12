@@ -1,0 +1,21 @@
+{
+  "name": "gamestorageserver",
+  "version": "1.0.0",
+  "description": "Server for game results return",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "author": "Martsinkou Uladzislau, Belarus, Minsk",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "mongodb": "^2.2.31",
+    "nodemon": "^1.12.1"
+  },
+  "engines": {
+    "node": "8.3.0"
+  }
+}
