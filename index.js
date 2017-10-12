@@ -6,6 +6,7 @@ var assert = require('assert');
 var app = express();
 
 var url = 'mongodb://generatorr:dataGame123@ds113915.mlab.com:13915/score';
+var port = process.env.PORT || 8080;
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
@@ -31,6 +32,6 @@ app.post('/', function (req, res) {
     });
 });
 
-var server = app.listen(3000, function () {
+var server = app.listen(port, function () {
     console.log('Server running at http://localhost:' + server.address().port)
 });
