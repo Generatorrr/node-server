@@ -29,6 +29,7 @@ app.post('/', function (req, res) {
             name: req.body.name || 'Unknown player',
             score: req.body.score || 'no score'
         });
+        res.send(200);
     });
 });
 
